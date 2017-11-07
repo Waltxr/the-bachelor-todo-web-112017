@@ -22,7 +22,7 @@ def count_contestants_by_hometown(data, hometown)
   data.keys.each do |key_string|
     data[key_string].each do |info_hash|
       if info_hash["hometown"] == hometown
-        counter =+ 1
+        counter += 1
       end
     end
   end
