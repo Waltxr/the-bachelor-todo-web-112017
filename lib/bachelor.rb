@@ -48,6 +48,6 @@ def get_average_age_for_season(data, season)
     end
   end
 
-  
-  return age_total
+  average = age_total.to_f / data[season].length.to_f
+  return average.to_i
 end
