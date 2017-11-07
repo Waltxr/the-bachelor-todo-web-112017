@@ -30,7 +30,13 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  # code here
+  data.keys.each do |key_string|
+    data[key_string].each do |info_hash|
+      if info_hash["occupation"] == occupation
+        return info_hash["name"]
+      end
+    end
+  end
 end
 
 def get_average_age_for_season(data, season)
