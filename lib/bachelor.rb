@@ -40,5 +40,9 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  age_total = 0
+  
+  data.keys.each do |key_string|
+    data[key_string].each do |info_hash|
+      age_total += info_hash["age"].to_i
 end
