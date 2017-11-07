@@ -32,8 +32,8 @@ end
 def get_occupation(data, hometown)
   data.keys.each do |key_string|
     data[key_string].each do |info_hash|
-      if info_hash["occupation"] == occupation
-        return info_hash["name"]
+      if info_hash["hometown"] == hometown
+        return info_hash["occupation"]
       end
     end
   end
